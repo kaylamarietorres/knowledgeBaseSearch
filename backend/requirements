@@ -1,0 +1,5 @@
+fastapi
+haystack
+elasticsearch
+uvicorn
+psycopg2-binary
