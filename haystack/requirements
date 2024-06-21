@@ -1,0 +1,4 @@
+farm-haystack
+fastapi
+uvicorn
+elasticsearch

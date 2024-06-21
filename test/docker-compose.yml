@@ -1,0 +1,26 @@
+version: '3.9'  # Specifies Docker Compose version (ensure compatibility with Docker)
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1  # Official image with specific version
+    container_name: elasticsearch
+
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+
+    volumes:
+      - esdata:/usr/share/elasticsearch/data  # Mounts a volume named "esdata" to persist data
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.14.1  # Official Kibana image with specific version
+    container_name: kibana
+    ports:
+      - "5601:5601"
+
+    depends_on:
+      - elasticsearch
+
+volumes:
+  esdata:  # Creates a volume named "esdata" for persistent data storage
