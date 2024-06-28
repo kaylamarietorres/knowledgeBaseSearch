@@ -6,9 +6,10 @@ Implement a search system that allows employees to quickly find information with
 ## Features:
 
 - Advanced search capabilities with natural language queries.
-- retrieval-augmented generation (RAG) - Question-answering functionality to provide direct answers from text without hallucinations
+- Retrieval-Augmented Generation (RAG)
+  - Question-answering functionality to provide direct answers from text without hallucinations.
 - Filtering and sorting options to refine search results.
-- Highlighting exact portions of the document where the answer is found to improve user experience
+- Highlighting exact portions of the document where the answer is found to improve user experience.
 - Summarizing documents
 
 
